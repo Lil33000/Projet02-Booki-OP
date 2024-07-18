@@ -15,6 +15,7 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0px;
 }
 
 .main-container {
@@ -65,19 +66,20 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 55px;
+  padding-bottom: 50px;
 }
 
 #logo {
-  padding: 2.75rem 0 0 0;
-  width: 3.875rem;
-  height: 1.25rem;
+  padding: 44px 0 0 0;
+  width: 62px;  
+  height: 20px;
 }
 
 #section-navbar {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 0.9em; 
   margin-top: 5px;
 }
 
@@ -109,51 +111,47 @@ a {
     margin-bottom: 10px;
 }
 
-#location-search {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    margin-bottom: 30px;
+#search-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.95em; 
+  margin-bottom: 30px;
 }
 
 .div-mark {
-    border-radius: 12px 0px 0px 12px;
-    background-color: #F2F2F2;
-    padding: 10px;
-    height: 20px;
+  border-radius: 12px 0 0 12px;
+  background-color: #F2F2F2;
+  padding: 10px;
+  height: 20px;
 }
 
 #input-location {
-    position: relative;
-    right: 2px;
-    height: 20px;
-    width: 150px;
-    color: black;
-    border: none;
-    font-weight: bold;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 10px;
+  height: 40px;
+  width: 150px;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 #input-location:focus {
-    height: 20px;
-    background-color: #DEEBFF;
-    outline: 1px solid #0065FC;
+  background-color: #DEEBFF;
+  outline: 1px solid #0065FC;
 }
 
 #desktop {
-    position: relative;
-    right: 3px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: #0065FC;
-    border: none;
-    border-radius: 0px 12px 12px 0px;
-    height: 37px;
-    padding: 9px 12px 9px 12px;
-    cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.95em; 
+  background-color: #0065FC;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  height: 40px;
+  padding: 9px 12px;
+  cursor: pointer;
 }
 
 
@@ -194,7 +192,7 @@ a {
 
 .types span {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.95em; 
     padding: 0px 10px;
 }
 
@@ -231,7 +229,6 @@ a {
     display: flex;
     align-items: center;
     margin-top: 20px;
-
 }
 
 #info .fa-info {
@@ -263,12 +260,11 @@ a {
 
 /****** Hebergements ***********/
 #hebergements {
-  width: 65%;
+  width:100%;
 }
 
 .card-hotel {
   width: 30%;
-  min-width: 120px;
   background-color: white;
   padding: 5px;
   margin: 15px 0px;
@@ -293,6 +289,9 @@ a {
     margin: 5px 0px 5px 15px;
 }
  
+.card-hotel span {
+  margin: 5px 0px 5px 15px;
+}
 
 #list-cards-hotels {
   display: flex;
@@ -345,6 +344,83 @@ a {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+
+/*********ACTIVITES*************/
+
+#activities {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+#activities h2 
+{
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.activities-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #DADADA;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+
+.activities-card h3 {
+  height: 25px;
+  width: auto;
+  font-size: 0.95em;
+  padding: 10px 10px 15px 15px;
+  margin: 0;
+}
+
+.activities-card img {
+  object-fit: cover;
+}
+
+.activities-dim {
+  width: 23%;
+  height: auto;
+}
+
+.full {
+  width: 100%;
+  height: 400px;
+}
+
+#activities-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*********FOOTER*************/
+
+footer {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  background-color: #F2F2F2;
+  padding: 10px 35px
+}
+
+.footer-div {
+  flex: 1;     /**regarder flex : 1*/
+  border: 1px solid;
+}
+
+.footer-div ul {
+  padding-left: 0px;
+  line-height: 30px;
+}
+
+.no-point {
+  list-style-type: none;
+}
+.footer-div a:hover {
+  color: #0065FC;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
