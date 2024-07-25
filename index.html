@@ -31,14 +31,13 @@
         <img id="logo" src="./images/logo/Booki@3x.png" alt="Booki" />
         <nav id="section-navbar">
           <a href="#hebergements">Hébergements</a>
-          <a href="/">Activités</a>
+          <a href="#activities">Activités</a>
         </nav>
       </header>
       <main id="page">
         <section id="block-search">
           <h1>Trouver votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre-ville ou en pleine nature</p>
-          <!--mettre en flex FIX: j'ai enlevé la position relative des childrens pour que flexbox s'occupe de la dispo des éléments -->
           <form id="search-location">
             <i class="fas fa-map-marker-alt div-mark"></i>
             <input
@@ -48,6 +47,7 @@
               value="Marseille, France"
             />
             <button id="desktop">Rechercher</button>
+            <button id="mobile"><i class="fas fa-search search-icon"></i></button>
           </form>
 
           <div id="filter">
@@ -300,7 +300,6 @@
           <div id="activities-list">
             <div class="activities-dim">
               <a href="#">
-                <!--enlever balise pas utile-->
                 <article class="activities-card">
                   <img
                     src="./images/activites/reno-laithienne.jpg"
