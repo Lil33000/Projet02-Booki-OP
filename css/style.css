@@ -1,6 +1,5 @@
 * {
   font-family: "Raleway", sans-serif;
-  
 }
 
 :root {
@@ -273,7 +272,6 @@ a {
   margin: 15px 0px;
   border-radius: 15px;
   box-shadow: 5px 5px 10px #dadada;
-  transition: 0.3s;
 }
 
 .card-hotel img {
@@ -301,7 +299,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 /****** Populaires ***********/
 .populaires {
@@ -363,13 +360,12 @@ a {
 }
 .activities-card {
   width: 100%;
-  height: 28rem;
+  height: auto;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 5px 5px 10px #dadada;
   overflow: hidden;
-  transition: 0.3s;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .activities-card h3 {
@@ -465,7 +461,6 @@ footer {
   .activities-card {
     width: 100%;
     height: 265px;
-
   }
   .activities-card h3 {
     padding: 8px;
@@ -482,7 +477,28 @@ footer {
   .main-container {
     padding: 0px;
   }
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0px 60px 0px;
+  }
 
+  #section-navbar {
+    width: 100%;
+    text-align: center;
+  }
+
+  #section-navbar a {
+    width: 100%;
+    border-bottom: 2px solid #d9d9d9;
+  }
+
+  #section-navbar a:hover {
+    border-top: none;
+    padding-top: 32px;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
   #input-location {
     width: 100%;
   }
@@ -510,7 +526,6 @@ footer {
 
   #block-search {
     padding: 10px;
-    
   }
 
   .types {
@@ -570,28 +585,5 @@ footer {
   footer {
     padding-left: 40px;
     flex-direction: column;
-  }
-
-  #header {
-    flex-direction: column;
-    justify-content: center;
-    margin: 40px 0px 60px 0px;
-  }
-
-  #section-navbar {
-    width: 100%;
-    text-align: center;
-  }
-
-  #section-navbar a {
-    width: 100%;
-    border-bottom: 2px solid #d9d9d9;
-  }
-
-  #section-navbar a:hover {
-    border-top: none;
-    padding-top: 32px;
-    border-bottom: 2px solid #0065fc;
-    color: #0065fc;
   }
 }
