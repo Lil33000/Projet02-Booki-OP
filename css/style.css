@@ -530,8 +530,7 @@ footer {
   }
 
   .types {
-    width: 40%;
-    min-width: fit-content;
+    width: calc(50% - 25px);
   }
 
   .hebergements-and-populaires {
