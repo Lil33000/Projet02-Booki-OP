@@ -70,7 +70,7 @@ a {
 }
 
 #logo {
-  padding: 44px 0 0 0;
+  align-items: start;
   width: 62px;
   height: 20px;
 }
@@ -362,9 +362,9 @@ a {
 .activities-card {
   width: 100%;
   height: auto;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 15px;
-  box-shadow: 5px 5px 10px #dadada;
+  box-shadow: 5px 5px 10px #f2f2f2;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -399,7 +399,6 @@ a {
 /*********FOOTER*************/
 
 footer {
-  max-width: 1440px;
   margin: auto;
   display: flex;
   background-color: #d9d9d9;
@@ -428,6 +427,10 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+  #filter {
+    flex-direction: column;
+    align-items: start;
+  }
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -478,6 +481,11 @@ footer {
   .main-container {
     padding: 0px;
   }
+
+  #logo {
+    padding-left: 20px;
+  }
+
   #header {
     flex-direction: column;
     justify-content: center;
